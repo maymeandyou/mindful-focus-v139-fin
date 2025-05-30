@@ -1,0 +1,27 @@
+{
+  "name": "Mindful Focus",
+  "short_name": "Mindful Focus",
+  "description": "Nurture your mental health with daily mindful practices",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F5F3F0",
+  "theme_color": "#DDEADE",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "categories": ["health", "lifestyle", "wellness"],
+  "lang": "en",
+  "dir": "ltr"
+}

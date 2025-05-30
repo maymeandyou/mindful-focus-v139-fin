@@ -1,0 +1,332 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --sage-green: #dde5d4;
+    --faded-rose: #f2d6d3;
+    --muted-amber: #f5e8c8;
+    --soft-taupe: #e9e3df;
+    --powder-blue: #dce7ec;
+    --text-primary: #4a4a4a;
+    --text-secondary: #6a6a6a;
+    --text-black: #000000;
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 48%;
+  }
+}
+
+@layer base {
+  * {
+    font-family: var(--font-poppins), system-ui, sans-serif !important;
+    @apply border-border;
+  }
+  body {
+    background-color: #fafafa;
+    color: var(--text-primary);
+    min-height: 100vh;
+    @apply bg-background text-foreground;
+  }
+}
+
+/* ========================================
+ MINDFUL FOCUS - v49 STYLE SYSTEM
+ ======================================== */
+
+/* v49 Color System - Perfect Balance */
+
+/* Force override all default styles */
+
+/* ========== TYPOGRAPHY SYSTEM - FORCED OVERRIDES ========== */
+
+/* Primary Titles - 28px Poppins Medium */
+.primary-title,
+h1 {
+  font-family: var(--font-poppins), sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 28px !important;
+  color: var(--text-primary) !important;
+  line-height: 1.3 !important;
+}
+
+/* Secondary Titles - 24px Poppins Medium */
+.secondary-title,
+h2 {
+  font-family: var(--font-poppins), sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 24px !important;
+  color: var(--text-primary) !important;
+  line-height: 1.2 !important;
+  margin: 0 !important;
+}
+
+/* Tertiary Titles (Card Titles) - 20px Poppins Medium */
+.tertiary-title,
+h3,
+.card-title {
+  font-family: var(--font-poppins), sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 20px !important;
+  color: var(--text-primary) !important;
+  line-height: 1.3 !important;
+}
+
+/* Body Text - 16px Poppins Regular */
+.body-text {
+  font-family: var(--font-poppins), sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  color: var(--text-primary) !important;
+  line-height: 1.6 !important;
+}
+
+/* Form Text - 14px Poppins Regular #4a4a4a */
+.form-text,
+label,
+input,
+textarea,
+select {
+  font-family: var(--font-poppins), sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  color: #4a4a4a !important;
+}
+
+/* Card Descriptions - 12px Poppins Regular #4a4a4a */
+.card-description {
+  font-family: var(--font-poppins), sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 12px !important;
+  color: #4a4a4a !important;
+  line-height: 1.4 !important;
+  padding-left: 12px !important;
+}
+
+/* Focus Area Descriptions - 12px Poppins Regular #4a4a4a with indent */
+.focus-area-description {
+  font-family: var(--font-poppins), sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 12px !important;
+  color: #6b5a45 !important;
+  line-height: 1.4 !important;
+  padding-left: 16px !important;
+}
+
+/* Home Card Descriptions - 14px Poppins Regular #6a6a6a */
+.home-card-description {
+  font-family: var(--font-poppins), sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  color: #6a6a6a !important;
+  line-height: 1.4 !important;
+  padding-left: 0 !important;
+}
+
+/* Navigation - 20px Poppins Medium */
+.nav-text {
+  font-family: var(--font-poppins), sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 20px !important;
+  color: var(--text-primary) !important;
+}
+
+/* Timer Digits - 32px Poppins Medium */
+.timer-digits {
+  font-family: var(--font-poppins), sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 32px !important;
+  color: var(--text-primary) !important;
+}
+
+/* Quotes - Livvic Italic 16px */
+.quote-text {
+  font-family: "Livvic", var(--font-inter), sans-serif !important;
+  font-style: italic !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  color: var(--text-primary) !important;
+  line-height: 1.6 !important;
+}
+
+/* Quotes Large - Livvic Italic 20px for Daily Inspiration */
+.quote-text-large {
+  font-family: "Livvic", var(--font-inter), sans-serif !important;
+  font-style: italic !important;
+  font-weight: 400 !important;
+  font-size: 20px !important;
+  color: var(--text-primary) !important;
+  line-height: 1.6 !important;
+}
+
+/* Button Text */
+button,
+.btn {
+  font-family: var(--font-poppins), sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 15px !important;
+}
+
+/* ========== COMPONENT STYLES ========== */
+
+/* Cards */
+.mindful-card {
+  background-color: #ffffff !important;
+  border: 1px solid var(--sage-green) !important;
+  border-radius: 1rem !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03) !important;
+}
+
+/* Buttons */
+.mindful-button {
+  background-color: var(--sage-green) !important;
+  color: #2a2a2a !important;
+  border-radius: 12px !important;
+  transition: all 0.2s ease !important;
+  font-family: var(--font-poppins), sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 15px !important;
+  padding: 8px 16px !important;
+  border: none !important;
+}
+
+.mindful-button:hover {
+  background-color: #c9d1c0 !important;
+}
+
+/* Input fields */
+.mindful-input {
+  border: 1px solid var(--sage-green) !important;
+  border-radius: 12px !important;
+  font-family: var(--font-poppins), sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  color: var(--text-primary) !important;
+}
+
+.mindful-input:focus {
+  border-color: var(--faded-rose) !important;
+  box-shadow: 0 0 0 3px rgba(242, 214, 211, 0.2) !important;
+}
+
+/* Header containers - Increased vertical padding */
+.header-container {
+  padding: 1.25rem 1rem !important;
+  background-color: #ffffff !important;
+  border-bottom: 1px solid #dde5d4 !important;
+}
+
+/* Difficulty badges - MORE MUTED STYLING */
+.difficulty-badge {
+  background-color: #f8f9fa !important;
+  color: #999999 !important;
+  font-weight: 400 !important;
+  font-size: 11px !important;
+  padding: 2px 6px !important;
+  border-radius: 4px !important;
+  border: 1px solid #e0e0e0 !important;
+}
+
+/* ========== ANIMATIONS ========== */
+
+@keyframes breatheIn {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.animate-breathe-slower {
+  animation: breatheIn 4s ease-in-out infinite;
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-scale-in {
+  animation: scale-in 0.2s ease-out;
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.3s ease-out;
+}
+
+/* ========== SCROLLBAR ========== */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8f9fa;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--sage-green);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d1d9c6;
+}
